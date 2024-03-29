@@ -40,6 +40,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "speedboost",
+                    "type": "Button",
+                    "id": "f01b1e6f-fce3-4f87-b4a1-21f4fcc62180",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -188,8 +197,8 @@
                 },
                 {
                     "name": "",
-                    "id": "e73c821f-8c0d-420b-9280-09fe28aab054",
-                    "path": "<Mouse>/position",
+                    "id": "96368ffc-f0ba-4318-b1f5-a87f61bf2b71",
+                    "path": "<Gamepad>/rightStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -198,13 +207,68 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "96368ffc-f0ba-4318-b1f5-a87f61bf2b71",
-                    "path": "<Gamepad>/rightStick",
+                    "name": "mouse",
+                    "id": "ca3b737a-1a0b-4eb8-b743-18a5ecc2313d",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Aim",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "314b45ee-7aa3-4ea0-9daa-477f1d8058f6",
+                    "path": "<Mouse>/delta/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "80a46f03-bbfd-47ac-ad13-075287fd791f",
+                    "path": "<Mouse>/delta/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "ceada48b-407a-475a-815b-9b2e1945cb6c",
+                    "path": "<Mouse>/delta/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "0f71a73c-82d7-400f-b1ff-525538a62556",
+                    "path": "<Mouse>/delta/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "b6d45658-917e-4a72-a191-17dd0f86a799",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "speedboost",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
