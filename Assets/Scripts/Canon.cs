@@ -13,6 +13,10 @@ public class Canon : MonoBehaviour
     [SerializeField] private float max_angle = 70;
     [SerializeField] private float min_angle = -70;
     
+    [SerializeField] public GameObject bullet;
+    [SerializeField] public Transform fireSource;
+    [SerializeField] private float bulletForce = 100;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -42,5 +46,11 @@ public class Canon : MonoBehaviour
             canonTransform.Rotate(Vector3.left, yaxis * sensibiliteSpeed * Time.deltaTime);
         }
         canonTransform.rotation.Set(canonTransform.rotation.x, 0, canonTransform.rotation.z, 1);
+    }
+    
+    public void HandleShoot(InputAction.CallbackContext inputContext)
+    {
+        Instantiate(bullet, fireSource.position, fireSource.rotation);
+        
     }
 }

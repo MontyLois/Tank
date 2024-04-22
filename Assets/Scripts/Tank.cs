@@ -9,6 +9,7 @@ public class Tank : MonoBehaviour
     [SerializeField] float maxSpeed = 10;
     [SerializeField] private float currentSpeed = 10;
     [SerializeField] private float rotationSpeed = 25;
+    [SerializeField] private float speedboost;
 
     private Transform localTransform;
     private float rotateAxis;
@@ -54,7 +55,7 @@ public class Tank : MonoBehaviour
     {
         if (inputContext.ReadValue<float>() > 0)
         {
-            currentSpeed += 50;
+            currentSpeed += speedboost;
         }
         else
         {
@@ -62,6 +63,5 @@ public class Tank : MonoBehaviour
         }
         
     }
-
-   
+    
 }
