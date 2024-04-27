@@ -12,7 +12,7 @@ public class Bullet : MonoBehaviour
     
     [SerializeField] private float timeBeforeSelfDestruction;
     [SerializeField] private VFXRenderer vfx;
-    public float speed = 20f;
+    public float speed;
     [SerializeField] public Animator animtor;
     
     [SerializeField] public GameObject vfxPrefab;
@@ -24,19 +24,20 @@ public class Bullet : MonoBehaviour
         //Destroy(this.gameObject, 5);
         Rigidbody rb = GetComponent<Rigidbody>();
         rb.velocity = transform.up * speed;
-
     }
     
 
     // Update is called once per frame
     void Update()
     {
-       
+        Destroy(this.gameObject, timeBeforeSelfDestruction);
     }
 
     private void OnCollisionEnter(Collision other)
     {
-        Debug.Log("feur"+ other.gameObject);
+        Debug.Log( other.gameObject);
+        
+        //Si en collision avec des objects destructibles, supprime ces derniers. 
          if (other.collider.CompareTag("Destructible"))
         {
             Destroy(other.gameObject);
@@ -47,9 +48,8 @@ public class Bullet : MonoBehaviour
          // Play the VFX
          //vfxPrefab.GetComponent<VisualEffect>().Play();
          
-         // Destroy the VFX Prefab after it finishes playing
-         
-         animtor.SetBool("Touchey", true);
+         // Destroy the object after the end of the vfx
+        animtor.SetBool("Touchey", true);
         Destroy(this.gameObject, vfxPrefab.GetComponent<ParticleSystem>().duration);
     }
 }

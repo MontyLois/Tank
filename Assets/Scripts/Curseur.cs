@@ -47,7 +47,7 @@ public class Curseur : MonoBehaviour
         // }
 
         //curseurTransform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        curseurTransform.position = maincam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, maincam.farClipPlane));
+        curseurTransform.position = maincam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, maincam.farClipPlane/2));
         
         //Input.mousePositionDelta.magnitude
     }

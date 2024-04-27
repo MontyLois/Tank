@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50cd0ea7af2efb499a67dee1ff6f9aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBeforeSelfDestruction: 2
+  timeBeforeSelfDestruction: 10
   vfx: {fileID: 0}
   speed: 80
   animtor: {fileID: 4264793773061318609}
