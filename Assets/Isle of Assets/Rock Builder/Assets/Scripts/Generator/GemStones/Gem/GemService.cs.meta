@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 05d76051da2577f418f5b10e95ccebc2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161407
+  packageName: RockBuilder
+  packageVersion: 1.1
+  assetPath: Assets/Rock Builder/Assets/Scripts/Generator/GemStones/Gem/GemService.cs
+  uploadId: 353267

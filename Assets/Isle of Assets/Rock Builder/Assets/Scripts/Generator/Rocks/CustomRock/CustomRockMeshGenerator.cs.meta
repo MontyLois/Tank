@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 59f65e4053af83047a100e017eaa3947
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161407
+  packageName: RockBuilder
+  packageVersion: 1.1
+  assetPath: Assets/Rock Builder/Assets/Scripts/Generator/Rocks/CustomRock/CustomRockMeshGenerator.cs
+  uploadId: 353267

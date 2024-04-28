@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 05e0bf5e7167bf3408d8dc75527101b2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161407
+  packageName: RockBuilder
+  packageVersion: 1.1
+  assetPath: Assets/Rock Builder/Assets/Scripts/Generator/Utilities/GemHandles.cs
+  uploadId: 353267

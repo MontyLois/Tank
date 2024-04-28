@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 30c40f0a2564135428e676eacdf9c7f5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161407
+  packageName: RockBuilder
+  packageVersion: 1.1
+  assetPath: Assets/Rock Builder/Assets/Scripts/Generator/Rocks/CustomRock/CustomRockListIteration.cs
+  uploadId: 353267

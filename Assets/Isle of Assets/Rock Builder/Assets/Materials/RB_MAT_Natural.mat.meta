@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: be250e13af901ec4d9f65954b39f0e68
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161407
+  packageName: RockBuilder
+  packageVersion: 1.1
+  assetPath: Assets/Rock Builder/Assets/Materials/RB_MAT_Natural.mat
+  uploadId: 353267

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 119bcd919886565448104a18fda86e0e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161407
+  packageName: RockBuilder
+  packageVersion: 1.1
+  assetPath: Assets/Rock Builder/Assets/Scripts/Generator/Rocks/StandardRock/Cube/CubeRockPreview.cs
+  uploadId: 353267

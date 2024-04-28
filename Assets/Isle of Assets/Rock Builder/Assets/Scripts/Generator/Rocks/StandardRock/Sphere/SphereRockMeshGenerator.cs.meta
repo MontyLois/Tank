@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 91c3866ac02630f4193c57f15195220f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161407
+  packageName: RockBuilder
+  packageVersion: 1.1
+  assetPath: Assets/Rock Builder/Assets/Scripts/Generator/Rocks/StandardRock/Sphere/SphereRockMeshGenerator.cs
+  uploadId: 353267

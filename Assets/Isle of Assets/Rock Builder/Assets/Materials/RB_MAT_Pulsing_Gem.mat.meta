@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 519870676092e15408c10ba784bbc41f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161407
+  packageName: RockBuilder
+  packageVersion: 1.1
+  assetPath: Assets/Rock Builder/Assets/Materials/RB_MAT_Pulsing_Gem.mat
+  uploadId: 353267

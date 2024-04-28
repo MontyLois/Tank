@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 4579a081bb439e049bd799b4ed4efc14
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161407
+  packageName: RockBuilder
+  packageVersion: 1.1
+  assetPath: Assets/Rock Builder/Assets/Scripts/Generator/GemStones/Diamond/DiamondMeshGenerator.cs
+  uploadId: 353267

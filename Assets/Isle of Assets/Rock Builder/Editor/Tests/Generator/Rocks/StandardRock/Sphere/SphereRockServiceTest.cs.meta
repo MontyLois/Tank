@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 16b7da98bda853e48be55a45f9ae3099
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161407
+  packageName: RockBuilder
+  packageVersion: 1.1
+  assetPath: Assets/Rock Builder/Editor/Tests/Generator/Rocks/StandardRock/Sphere/SphereRockServiceTest.cs
+  uploadId: 353267

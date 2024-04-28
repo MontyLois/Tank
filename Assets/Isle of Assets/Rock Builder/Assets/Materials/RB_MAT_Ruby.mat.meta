@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6fce63962ffc90e4895249526f88bb5b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161407
+  packageName: RockBuilder
+  packageVersion: 1.1
+  assetPath: Assets/Rock Builder/Assets/Materials/RB_MAT_Ruby.mat
+  uploadId: 353267
