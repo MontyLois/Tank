@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 9090654571006752122}
   - component: {fileID: 4264793773061318609}
   m_Layer: 0
-  m_Name: Bullet
+  m_Name: Bullet_Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,8 +199,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50cd0ea7af2efb499a67dee1ff6f9aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damages: 20
-  targetTag: Enemy
+  damages: 10
+  targetTag: Ally
   timeBeforeSelfDestruction: 10
   vfx: {fileID: 0}
   speed: 80

@@ -6,19 +6,24 @@ using UnityEngine.InputSystem;
 
 public class Tank : MonoBehaviour
 {
-    [SerializeField] float maxSpeed = 10;
-    [SerializeField] private float currentSpeed = 10;
+    [SerializeField] private Turret_Canon mainWeapon;
+    
+    [SerializeField] public float baseSpeed = 10;
+    [SerializeField] public float currentSpeed = 10;
+    [SerializeField] public float speedBoost;
     [SerializeField] private float rotationSpeed = 25;
-    [SerializeField] private float speedboost;
+    
 
     private Transform localTransform;
-    private float rotateAxis;
-    private Vector3 moveVector;
+    private Rigidbody tankRb;
+    public float rotateAxis;
+    public Vector3 moveVector;
     
     // Start is called before the first frame update
     void Start()
     {
         localTransform = GetComponent<Transform>();
+        tankRb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -31,37 +36,19 @@ public class Tank : MonoBehaviour
     {
         localTransform.Rotate(Vector3.up, rotateAxis * rotationSpeed * Time.deltaTime);
         localTransform.Translate(moveVector * currentSpeed* Time.deltaTime);
-    }
-    public void HandleRotate(InputAction.CallbackContext inputContext)
-    {
-        rotateAxis = inputContext.ReadValue<float>();
+        //tankRb.AddForce(moveVector, ForceMode.Impulse);
     }
     
-    public void HandleMove(InputAction.CallbackContext inputContext)
+    
+    public void PrimaryAttaque()
     {
-        moveVector = inputContext.ReadValue<float>() * Vector3.forward;
+        mainWeapon.Shoot();
     }
+    
 
-    public void Aim()
+    public void setTarget(Transform target)
     {
-        
-    }
-    public void Shoot()
-    {
-        
-    }
-    
-    public void HandleSpeed(InputAction.CallbackContext inputContext)
-    {
-        if (inputContext.ReadValue<float>() > 0)
-        {
-            currentSpeed += speedboost;
-        }
-        else
-        {
-            currentSpeed = maxSpeed;
-        }
-        
+        mainWeapon.SetTarget(target);
     }
     
 }

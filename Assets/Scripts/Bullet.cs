@@ -9,6 +9,8 @@ using Object = System.Object;
 
 public class Bullet : MonoBehaviour
 {
+    [SerializeField] private float damages;
+    [SerializeField] private string targetTag;
     
     [SerializeField] private float timeBeforeSelfDestruction;
     [SerializeField] private VFXRenderer vfx;
@@ -21,9 +23,8 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Destroy(this.gameObject, 5);
         Rigidbody rb = GetComponent<Rigidbody>();
-        rb.velocity = transform.up * speed;
+        rb.velocity = transform.forward * speed;
     }
     
 
@@ -42,6 +43,13 @@ public class Bullet : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
+
+         Health health = other.gameObject.GetComponent<Health>();
+         if (health != null)
+         {
+             // Apply damage to the collided object
+             health.takeDamages(damages);
+         }
 
          //GameObject vfxInstance = Instantiate(vfxPrefab, other.contacts[0].point, Quaternion.identity);
 
