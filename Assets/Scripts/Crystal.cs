@@ -26,5 +26,6 @@ public class Crystal : MonoBehaviour
     {
         gameManager.IncrementScore(500);
         Destroy(gameObject);
+        gameManager.EndGame();
     }
 }

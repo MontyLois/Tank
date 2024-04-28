@@ -12,8 +12,6 @@ public class Score : MonoBehaviour
         // Subscribe to the score updated event
         gameManager.OnScoreUpdated.AddListener(UpdateScoreText);
 
-        // Ensure the UI GameObject persists across scene loads
-        DontDestroyOnLoad(gameObject);
     }
 
     private void UpdateScoreText(int score)

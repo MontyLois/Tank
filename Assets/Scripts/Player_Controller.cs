@@ -10,6 +10,7 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] private Health tankHealth;
     [SerializeField] private Curseur curseurScript;
     [SerializeField] private Transform curseurTransform;
+    [SerializeField] private GameManager gameManager;
     
     // Start is called before the first frame update
     void Start()
@@ -22,7 +23,7 @@ public class Player_Controller : MonoBehaviour
     {
         if (tankHealth.lifePoint <= 0)
         {
-            //gameover
+            gameManager.EndGame();
         }
     }
     
